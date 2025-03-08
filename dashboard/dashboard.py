@@ -22,7 +22,7 @@ def get_order_trend(df):
     return trend
 
 # Load data
-df = pd.read_csv("all_data.csv")  # Sesuaikan path jika diperlukan
+df = pd.read_csv("C:/Users/PLN/submission/dashboard/all_data.csv")  
 
 df["order_purchase_timestamp"] = pd.to_datetime(df["order_purchase_timestamp"])
 min_date = df["order_purchase_timestamp"].min().date()
